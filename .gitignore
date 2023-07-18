@@ -1,0 +1,146 @@
+# =========================
+# 🖥️ OS & Editor / System
+# =========================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.swm
+*.*un~
+tags
+
+# =========================
+# 🔑 Environment & Secrets (보안 필수)
+# =========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.pem
+my_settings.py
+local_settings.py
+terraform/terraform.tfvars
+
+# =========================
+# 🪵 Logs
+# =========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pip-log.txt
+pip-delete-this-directory.txt
+_BACKUP_SOURCE
+
+# =========================
+# 📦 Node.js (Root, Client, Server)
+# =========================
+node_modules/
+*/node_modules/
+# Lock 파일은 팀 정책에 따라 커밋 여부 결정 (일반적으로 커밋 권장하나 요청하신 목록에 있어 포함)
+package-lock.json
+yarn.lock
+
+# =========================
+# 🌐 Client (Next.js)
+# =========================
+client/.next/
+client/out/
+client/build/
+client/.vercel/
+client/*.tsbuildinfo
+
+# =========================
+# ⚙️ Server (Node.js/TypeORM)
+# =========================
+server/dist/
+server/build/
+server/ormconfig.json
+
+# =========================
+# 🏗️ Infrastructure (Terraform)
+# =========================
+terraform/*.tfstate
+terraform/*.tfstate.backup
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+
+# =========================
+# 🐍 Python / Django (요청하신 내용 포함)
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Pipenv
+Pipfile
+Pipfile.lock
+
+# Django / Flask
+db.sqlite3
+db.sqlite3-journal
+instance/
+.webassets-cache
+
+# Testing & Coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter / IPython
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# Type Checkers
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# Others
+celerybeat-schedule
+*.manifest
+*.spec
+*.sage.py
+uploads/
+*.sh
